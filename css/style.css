@@ -1,0 +1,108 @@
+section h2 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Algemene styling */
+html, body {
+    font-family: Arial, sans-serif;
+    color: #9FA692;
+    background-color: #F2F0EB;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header / navbar */
+nav {
+    background-color: #B9BFAA;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* Navbar links centreren */
+.navbar-nav {
+    margin: 0 auto;
+}
+  
+.nav-link {
+    color: #000000;
+    font-weight: 500;
+}
+
+
+/* Zoekbalk */
+nav form input {
+    max-width: 150px;
+}
+
+/* Main */
+main {
+    background-color: #F2F0EB;
+    max-width: 1600px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0;
+    flex: 1;
+}
+
+
+/* Sidebar */
+aside {
+    background-color: #F2F0EB;
+    padding: 20px;
+}
+
+/* Knoppen */
+.btn-dark {
+    background-color: #000000;
+    border: none;
+}
+
+.btn-outline-dark {
+    border-color: #000000;
+    color: #000000;
+}
+
+/* Footer */
+footer {
+    background-color: #B9BFAA;
+    color: #000000;
+    padding: 20px;
+}
+
+/* Afbeeldingen */
+img {
+    object-fit: cover;
+}
+
+.logo {
+    height: 80px;
+}
+
+/* Contactformulier */
+form .form-control,
+form .form-select,
+form textarea {
+    width: 100%;
+}
+
+/* Leaflet map */
+#map { height: 250px; }
