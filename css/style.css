@@ -1,3 +1,4 @@
+/* Random */
 section h2 {
     font-size: 18px;
     font-weight: normal;
@@ -29,7 +30,7 @@ body {
     flex-direction: column;
 }
 
-/* Header / navbar */
+/* Header en navbar */
 nav {
     background-color: #B9BFAA;
     padding-top: 15px;
@@ -96,6 +97,13 @@ img {
 .logo {
     height: 80px;
 }
+
+.project-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
 
 /* Contactformulier */
 form .form-control,

@@ -16,7 +16,10 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
     </script>
   <!-- eigen geschreven css voor jouw html-bestand -->
+<link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <!-- eigen geschreven java -->
+  <script src="js/script2.js" defer></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -30,12 +33,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">PORTFOLIO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
                 </ul>
-                <form class="d-flex ms-3">
-                    <input class="form-control" type="search" placeholder="Search">
-                </form>
             </div>
         </div>
     </nav>
@@ -44,7 +45,7 @@
         <div class="row"> 
             <!-- Hoofd content -->
             <section class="col-lg-8">
-                <h1 class="mt-4">Dina</h1>
+                <h1 class="mt-4">Systeembeheerder</h1>
 
                 <!-- Slideshow -->
                 <div id="carouselExampleIndicators" class="carousel slide mb-4" data-bs-ride="carousel">
@@ -74,16 +75,13 @@
                     </button>
                 </div>
 
-                <!-- Intro tekst -->
-                <p>Welkom op mijn portfolio website. Hier laat ik zien aan welke projecten ik heb gewerkt en hoe deze zijn verlopen.
-</p>
 
                 <!-- Foto en tekst -->
                 <div class="d-flex align-items-center mt-4">
                     <img src="assets/foto_vanmezelf.png" alt="Eigen foto" class="img-fluid rounded me-3" style="max-width:150px;">
-                    <p><b>Over mij</b>
+                    <p><b>Dina Ezzarfani</b>
                         <br> 
-Ik ben een gemotiveerde student Systeem- en Netwerkbeheer met een sterke interesse in IT-infrastructuur, netwerken en cybersecurity. Tijdens mijn opleiding heb ik een basis opgebouwd in het installeren, configureren en beheren van servers, netwerken en werkstations. Ik werk nauwkeurig, analytisch en oplossingsgericht.
+Ik ben een gemotiveerde studente Systeem- en Netwerkbeheer met een sterke interesse in IT-infrastructuur, netwerken en cybersecurity. Tijdens mijn opleiding heb ik een basis opgebouwd in het installeren, configureren en beheren van servers, netwerken en werkstations. Ik werk nauwkeurig, analytisch en oplossingsgericht.
 Ik heb ervaring met Windows- en Linux-omgevingen, netwerkconfiguraties, virtualisatie en basisprincipes van beveiliging. Daarnaast werk ik graag zowel zelfstandig als in teamverband en ben ik steeds bereid om bij te leren in een snel evoluerende IT-wereld.
 <br>
 Mijn doel is om mij verder te ontwikkelen tot een betrouwbare IT-professional die bijdraagt aan een stabiele, veilige en performante IT-omgeving binnen een organisatie.</p>
@@ -92,8 +90,11 @@ Mijn doel is om mij verder te ontwikkelen tot een betrouwbare IT-professional di
 
     <!-- Sidebar -->
             <aside class="col-lg-4">
-                <h3 class="mt-4">Meest recente project</h3>
-                <img src="assets/vervangafbeelding.jpg" alt="Recent project" class="img-fluid mb-3">
+                <a href="snbproject.html">
+                    <h3 class="mt-4">Meest recente project</h3>
+                    <img src="assets/pf-logo.png" alt="Recent project" class="img-fluid mb-3">
+                </a>
+
                 <div class="d-grid gap-2">
                     <a href="portfolio.html" class="btn btn-dark">MIJN PORTFOLIO</a>
                     <a href="contact.html" class="btn btn-outline-dark">CONTACTEER MIJ</a>
@@ -105,9 +106,13 @@ Mijn doel is om mij verder te ontwikkelen tot een betrouwbare IT-professional di
     <!-- Footer -->
     <footer class="py-4 mt-5">
         <div class="container text-center">
-            <p>&copy; 2026 Dina.</p>
+            <p>© <span id="jaar"></span> Dina Ezzarfani</p>
         </div>
     </footer>
+
+<script>
+  document.getElementById("jaar").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>

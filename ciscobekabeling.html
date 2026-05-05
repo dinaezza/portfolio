@@ -17,6 +17,8 @@
     </script>
   <!-- eigen geschreven css voor jouw html-bestand -->
   <link rel="stylesheet" href="css/style.css">
+  <!-- eigen geschreven java -->
+  <script src="js/script2.js" defer></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -30,12 +32,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">PORTFOLIO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
                 </ul>
-                <form class="d-flex ms-3">
-                    <input class="form-control" type="search" placeholder="Search">
-                </form>
             </div>
         </div>
     </nav>
@@ -45,18 +45,42 @@
 
         <section class="col-lg-8">
 
-            <h1 class="mt-4">Project 1 - Cisco Bekabeling</h1>
+            <h1 class="mt-4">Cisco Bekabeling</h1>
 
-            <div class="row mt-3">
+                        <div class="row mt-3">
                 <div class="col-md-8">
-                    <img src="assets/ciscobekabeling-1.png" class="img-fluid" alt="Project">
-                </div>
-                <div class="col-md-4">
                     <p>
                         In dit project was het de bedoeling dat we per 2 personen volgens de wensen van een bedrijf hun kantoor correct en logisch moesten bekabelen, apparaten plaatsen en de juiste rack-layout toepassen.
+                        <br> </br>
+                        <strong>Resultaat:</strong>
+                        foto 1: complete plattegrond, foto 2: Rack-layout
                     </p>
                 </div>
             </div>
+
+            <div id="projectCarousel" class="carousel slide mt-3" data-bs-ride="carousel">
+    
+    <div class="carousel-inner">
+
+        <div class="carousel-item active">
+            <img src="assets/ciscobekabeling-1.png" class="d-block w-100 carousel-img" alt="Project afbeelding 1">
+        </div>
+
+        <div class="carousel-item">
+            <img src="assets/ciscobekabeling-2.png" class="d-block w-100 carousel-img" alt="Project afbeelding 2">
+        </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+
+</div>
 
             <!-- Lijst -->
             <h2 class="mt-4">Wat heb ik gedaan?</h2>
@@ -67,10 +91,6 @@
                 <li>Patch plan gemaakt</li>
                 <li>Aankooplijst opgesteld</li>
             </ul>
-
-            <!-- Resultaat -->
-            <h2 class="mt-4">Rack-layout</h2>
-            <img src="assets/ciscobekabeling-2.png" class="img-fluid mt-2" alt="Resultaat">
 
         </section>
 
@@ -87,7 +107,7 @@
 
             <!-- Volgende project -->
             <div class="mt-5">
-                <a href="project2.html" class="btn btn-dark">VOLGENDE PROJECT</a>
+                <a href="ciscoprogramming.html" class="btn btn-dark">VOLGENDE PROJECT</a>
             </div>
 
         </aside>
@@ -97,7 +117,7 @@
     <!-- Footer -->
     <footer class="py-4 mt-5">
         <div class="container text-center">
-            <p>&copy; 2026 Dina.</p>
+            <p>&copy; 2026 Dina Ezzarfani.</p>
         </div>
     </footer>
 

@@ -16,7 +16,10 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
     </script>
   <!-- eigen geschreven css voor jouw html-bestand -->
+   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <!-- eigen geschreven java -->
+  <script src="js/script2.js" defer></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -30,12 +33,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">PORTFOLIO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
                 </ul>
-                <form class="d-flex ms-3">
-                    <input class="form-control" type="search" placeholder="Search">
-                </form>
             </div>
         </div>
     </nav>
@@ -51,39 +52,47 @@
                 <!-- Project 1 -->
                 <div class="col-md-4 mb-4">
                     <a href="ciscobekabeling.html">
-                        <h2>Project 1</h2>
-                        <img src="assets/ciscobekabeling-1.png" class="img-fluid" alt="Project 1">
+                        <h2>Ciscobekabeling</h2>
+                        <img src="assets/ciscobekabeling-1.png" class="img-fluid project-img" alt="Project 1">
                     </a>
                 </div>
 
                 <!-- Project 2 -->
                 <div class="col-md-4 mb-4">
-                    <h2>Project 2</h2>
-                    <img src="assets/vervangafbeelding.jpg" class="img-fluid" alt="Project 2">
+                    <a href="ciscoprogramming.html">
+                        <h2>Cisco Programming</h2>
+                        <img src="assets/ciscoprogramming-1.png" class="img-fluid project-img" alt="Project 2">
+                    </a>
                 </div>
 
                 <!-- Project 3 -->
                 <div class="col-md-4 mb-4">
-                    <h2>Project 3</h2>
-                    <img src="assets/vervangafbeelding.jpg" class="img-fluid" alt="Project 3">
+                    <a href="powershellscripting.html">
+                        <h2>Powershell scripting</h2>
+                        <img src="assets/powershellscripting-1.png" class="img-fluid project-img" alt="Project 3">
+                    </a>
                 </div>
 
                 <!-- Project 4 -->
                 <div class="col-md-4 mb-4">
-                    <h2>Project 4</h2>
-                    <img src="assets/vervangafbeelding.jpg" class="img-fluid" alt="Project 4">
+                    <a href="ciscoproject.html">
+                        <h2>Cisco Project</h2>
+                        <img src="assets/ciscoproject-1.png" class="img-fluid project-img" alt="Project 4">
+                    </a>
                 </div>
 
                 <!-- Project 5 -->
                 <div class="col-md-4 mb-4">
-                    <h2>Project 5</h2>
-                    <img src="assets/vervangafbeelding.jpg" class="img-fluid" alt="Project 5">
+                    <a href="snbproject.html">
+                        <h2>SNB Project</h2>
+                        <img src="assets/snbproject-1.png" class="img-fluid project-img" alt="Project 5">
+                    </a>
                 </div>
 
                 <!-- Project 6 -->
                 <div class="col-md-4 mb-4">
                     <h2>Project 6</h2>
-                    <img src="assets/vervangafbeelding.jpg" class="img-fluid" alt="Project 6">
+                    <img src="assets/vervangafbeelding.jpg" class="img-fluid project-img" alt="Project 6">
                 </div>
 
             </div>
@@ -104,7 +113,7 @@
     <!-- Footer -->
     <footer class="py-4 mt-5">
         <div class="container text-center">
-            <p>&copy; 2026 Dina.</p>
+            <p>&copy; 2026 Dina Ezzarfani.</p>
         </div>
     </footer>
 
