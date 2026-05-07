@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ciscobekabeling</title>
+  <title>powershellscripting</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -32,8 +32,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">HOME</a></li>
-                    <li class="nav-item"><a class="nav-link" href="portfolio.html">PORTFOLIO</a></li>
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="portfolio.html">PORTFOLIO</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
@@ -58,39 +58,76 @@
                 </div>
             </div>
 
-            <div id="projectCarousel" class="carousel slide mt-3" data-bs-ride="carousel">
-    
-    <div class="carousel-inner">
-
-        <div class="carousel-item active">
-            <img src="assets/powershellscripting-1.png" class="d-block w-100 carousel-img" alt="Project afbeelding 1">
-        </div>
-
-    </div>
-
-    <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-    </button>
-
-    <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-    </button>
-
+<div class="mt-3">
+    <img src="assets/powershellscripting-1.png" class="img-fluid carousel-img" alt="Project afbeelding">
 </div>
 
-            <!-- Lijst -->
-            <h2 class="mt-4">Wat doet het script automatisch bij opstarten?</h2>
-            <ul>
-                <li>Netwerkconfiguratie aanpassen volgens computer.settings.xml</li>
-                <li>Domain Controller installeren of lid maken van een bestaand domein.</li>
-                <li>Organizational Units aanmaken uit ou.txt</li>
-                <li>Security Groups aanmaken uit securitygroups.csv</li>
-                <li>Domeingebruikers aanmaken uit users.json</li>
-                <li>Users toevoegen aan groepen volgens users.json</li>
-                <li>Mappen en shares aanmaken uit mappen.txt en shares.csv</li>
-                <li>NTFS-rechten toekennen aan mappen/shares volgens rechten.csv</li>
-            </ul>
+ <h2 class="mt-4">Automatische functionaliteiten van het script</h2>
 
+<div class="table-responsive mt-3">
+    <table class="table table-bordered table-striped">
+
+        <thead class="table-dark">
+            <tr>
+                <th>Onderdeel</th>
+                <th>Bestand</th>
+                <th>Actie</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Netwerkconfiguratie</td>
+                <td>computer.settings.xml</td>
+                <td>IP-configuratie automatisch instellen</td>
+            </tr>
+
+            <tr>
+                <td>Domain Controller</td>
+                <td>PowerShell script</td>
+                <td>Domein installeren of joinen</td>
+            </tr>
+
+            <tr>
+                <td>Organizational Units</td>
+                <td>ou.txt</td>
+                <td>OU-structuur automatisch aanmaken</td>
+            </tr>
+
+            <tr>
+                <td>Security Groups</td>
+                <td>securitygroups.csv</td>
+                <td>Groepen automatisch genereren</td>
+            </tr>
+
+            <tr>
+                <td>Domeingebruikers</td>
+                <td>users.json</td>
+                <td>Gebruikersaccounts aanmaken</td>
+            </tr>
+
+            <tr>
+                <td>Groepslidmaatschap</td>
+                <td>users.json</td>
+                <td>Gebruikers toevoegen aan groepen</td>
+            </tr>
+
+            <tr>
+                <td>Mappen en shares</td>
+                <td>mappen.txt & shares.csv</td>
+                <td>Shares en folders configureren</td>
+            </tr>
+
+            <tr>
+                <td>NTFS-rechten</td>
+                <td>rechten.csv</td>
+                <td>Permissies automatisch toekennen</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+</div>           
         </section>
 
     <!-- Sidebar -->
