@@ -65,19 +65,21 @@
 
             <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" class="mt-4">
 
+                <input type="hidden" name="form-name" value="contact">
+                
                 <div class="mb-3">
                     <label class="form-label">Naam</label>
-                    <input type="text" class="form-control" placeholder="Jouw naam">
+                    <input type="text" name="naam" class="form-control" placeholder="Jouw naam">
                 </div>
 
                 <div class="mb-3">
                     <label class="form-label">E-mail</label>
-                    <input type="email" class="form-control" placeholder="jouw@e-mail.com">
+                    <input type="email" name="email" class="form-control" placeholder="jouw@e-mail.com">
                 </div>
 
                 <div class="mb-3">
                     <label class="form-label">Onderwerp</label>
-                    <select class="form-select">
+                    <select name="onderwerp" class="form-select">
                         <option>Vraag</option>
                         <option>Samenwerking</option>
                         <option>Andere</option>
@@ -86,13 +88,16 @@
 
                 <div class="mb-3">
                     <label class="form-label">Bericht</label>
-                    <textarea class="form-control" rows="5" placeholder="Typ hier je bericht..."></textarea>
+                    <textarea name="bericht" class="form-control" rows="5" placeholder="Typ hier je bericht..."></textarea>
                 </div>
                 <div data-netlify-recaptcha="true"></div>
                 <button type="submit" class="btn btn-dark">Verstuur</button>
 
             </form>
         </section>
+
+
+
 
         <!-- ASIDE -->
         <aside class="col-lg-4">
